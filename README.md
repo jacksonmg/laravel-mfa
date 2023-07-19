@@ -20,13 +20,13 @@ Requirements:
 To get the latest version of Laravel MFA, simply run:
 
 ```
-composer require sicaboy/laravel-mfa
+composer require jackson/laravel-mfa
 ```
 
 Then do vendor publish:
 
 ```
-php artisan vendor:publish --provider="Sicaboy\LaravelMFA\LaravelMFAServiceProvider"
+php artisan vendor:publish --provider="Jackson\LaravelMFA\LaravelMFAServiceProvider"
 ```
 
 After publishing, you can modify templates and config in:
