@@ -55,7 +55,7 @@ Route::middleware(['mfa'])->group(function () {
 ```
 
 ### If Using Different Auth Objects
-If you use different `Auth` objects, for example user auth and admin auth, you can apply following to enable MFA for admin pages. 
+If you use different `Auth` objects, for example user auth and admin auth, you can apply following to enable MFA for admin pages.
 
 - Attach the middleware to your routes.
 
@@ -72,7 +72,7 @@ return [
     'default' => [
         ...
     ],
-    'group' 
+    'group'
         'admin' => [ // Example, when using middleware 'mfa:admin'. Attributes not mentioned will be inherit from `default` above
             'login_route' => 'admin.login',
             'auth_user_closure' => function() {
