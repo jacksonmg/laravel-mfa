@@ -101,6 +101,21 @@ return [
 ]
 ```
 
+## ENV Variables
+
+Turn `on` or `off`
+Values: true, false
+Default: true
+```
+MFA_ENABLED
+```
+
+Control countdown for the next MFA challenge
+Values: Integer (hours)
+Default: 24 (hours)
+```
+MFA_EXPIRES
+```
 
 ## TODO
 
