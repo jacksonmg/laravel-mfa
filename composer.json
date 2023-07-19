@@ -1,7 +1,7 @@
 {
-    "name": "sicaboy/laravel-mfa",
+    "name": "jackson/laravel-mfa",
     "type": "library",
-    "description": "A Laravel package of Multi-factor Authentication (MFA/2FA) with a middleware.",
+    "description": "A Laravel package of Multi-factor Authentication (MFA/2FA) with a middleware. Fork of https://github.com/sicaboy/laravel-mfa",
     "keywords": [
         "laravel",
         "multi-factor",
@@ -12,7 +12,7 @@
         "authentication",
         "security"
     ],
-    "homepage": "https://github.com/sicaboy/laravel-mfa",
+    "homepage": "https://lab.jacksonmg.com/jackson/laravel-mfa",
     "license": "MIT",
     "authors": [
         {
@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sicaboy\\LaravelMFA\\": "src"
+            "Jackson\\LaravelMFA\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sicaboy\\LaravelMFA\\Test\\": "tests"
+            "Jackson\\LaravelMFA\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sicaboy\\LaravelMFA\\LaravelMFAServiceProvider"
+                "Jackson\\LaravelMFA\\LaravelMFAServiceProvider"
             ]
         }
     }
