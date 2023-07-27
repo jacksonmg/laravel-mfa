@@ -4,6 +4,7 @@ return [
     'default' => [
         'enabled'                   => env('MFA_ENABLED', true),
         'template'                  => 'laravel-mfa::mfa.form',
+        'mfa_expires_in_hours'      => env('MFA_EXPIRES', 24), // Instance: now()->add(hours($value)) - PHP Carbon instance
         'code_expire_after_minutes' => 10,
         'login_route'               => 'login',  // Route name
         /* Route after successfully verified.
