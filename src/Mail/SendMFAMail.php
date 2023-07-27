@@ -1,16 +1,16 @@
 <?php
 
-namespace Sicaboy\LaravelMFA\Mail;
+namespace Jacksonmg\LaravelMFA\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Sicaboy\LaravelMFA\Helpers\MFAHelper;
+use Jacksonmg\LaravelMFA\Helpers\MFAHelper;
 
 /**
  * Class SendMFAMail
- * @package Sicaboy\LaravelMFA\Mail
+ * @package Jacksonmg\LaravelMFA\Mail
  */
 class SendMFAMail extends Mailable
 {

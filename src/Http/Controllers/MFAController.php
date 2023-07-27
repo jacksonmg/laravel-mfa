@@ -1,18 +1,18 @@
 <?php
 
-namespace Sicaboy\LaravelMFA\Http\Controllers;
+namespace Jacksonmg\LaravelMFA\Http\Controllers;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
-use Sicaboy\LaravelMFA\Helpers\MFAHelper;
-use Sicaboy\LaravelMFA\Mail\SendMFAMail;
+use Jacksonmg\LaravelMFA\Helpers\MFAHelper;
+use Jacksonmg\LaravelMFA\Mail\SendMFAMail;
 
 /**
  * Class MFAController
- * @package Sicaboy\LaravelMFA\Http\Controllers
+ * @package Jacksonmg\LaravelMFA\Http\Controllers
  */
 class MFAController extends Controller
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Sicaboy\LaravelMFA\Listeners;
+namespace Jacksonmg\LaravelMFA\Listeners;
 
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Sicaboy\LaravelMFA\Helpers\MFAHelper;
+use Jacksonmg\LaravelMFA\Helpers\MFAHelper;
 
 /**
  * Class ClearMFAStatus
- * @package Sicaboy\LaravelMFA\Listeners
+ * @package Jacksonmg\LaravelMFA\Listeners
  */
 class ClearMFAStatus
 {

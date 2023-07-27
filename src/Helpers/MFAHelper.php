@@ -1,6 +1,6 @@
 <?php
 
-namespace Sicaboy\LaravelMFA\Helpers;
+namespace Jacksonmg\LaravelMFA\Helpers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Session;
 
 /**
  * Class MFAHelper
- * @package Sicaboy\LaravelMFA\Helpers
+ * @package Jacksonmg\LaravelMFA\Helpers
  */
 class MFAHelper
 {

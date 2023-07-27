@@ -1,13 +1,13 @@
 <?php
 
-namespace Sicaboy\LaravelMFA\Providers;
+namespace Jacksonmg\LaravelMFA\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 /**
  * Class EventServiceProvider
- * @package Sicaboy\LaravelMFA\Providers
+ * @package Jacksonmg\LaravelMFA\Providers
  */
 class EventServiceProvider extends ServiceProvider
 {
@@ -18,7 +18,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         \Illuminate\Auth\Events\Logout::class => [
-            \Sicaboy\LaravelMFA\Listeners\ClearMFAStatus::class,
+            \Jacksonmg\LaravelMFA\Listeners\ClearMFAStatus::class,
         ],
     ];
 

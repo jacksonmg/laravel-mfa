@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Sicaboy\LaravelMFA;
+namespace Jacksonmg\LaravelMFA;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -18,7 +18,7 @@ use Validator;
 
 /**
  * Class LaravelMFAServiceProvider
- * @package Sicaboy\LaravelMFA
+ * @package Jacksonmg\LaravelMFA
  */
 class LaravelMFAServiceProvider extends ServiceProvider
 {
@@ -28,8 +28,8 @@ class LaravelMFAServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->register(\Sicaboy\LaravelMFA\Providers\EventServiceProvider::class);
-        $this->app['router']->aliasMiddleware('mfa', \Sicaboy\LaravelMFA\Http\Middleware\MFA::class);
+        $this->app->register(\Jacksonmg\LaravelMFA\Providers\EventServiceProvider::class);
+        $this->app['router']->aliasMiddleware('mfa', \Jacksonmg\LaravelMFA\Http\Middleware\MFA::class);
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laravel-mfa');
         $this->registerRoutes();
         $this->registerPublishing();
@@ -72,7 +72,7 @@ class LaravelMFAServiceProvider extends ServiceProvider
     protected function routeConfiguration()
     {
         return [
-            'namespace' => 'Sicaboy\LaravelMFA\Http\Controllers',
+            'namespace' => 'Jacksonmg\LaravelMFA\Http\Controllers',
             'prefix' => 'mfa',
             'as' => 'mfa.',
             'middleware' => 'web',

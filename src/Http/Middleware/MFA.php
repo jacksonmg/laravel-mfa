@@ -1,14 +1,14 @@
 <?php
 
-namespace Sicaboy\LaravelMFA\Http\Middleware;
+namespace Jacksonmg\LaravelMFA\Http\Middleware;
 
 use Closure;
 use Illuminate\Routing\UrlGenerator;
-use Sicaboy\LaravelMFA\Helpers\MFAHelper;
+use Jacksonmg\LaravelMFA\Helpers\MFAHelper;
 
 /**
  * Class MFA
- * @package Sicaboy\LaravelMFA\Http\Middleware
+ * @package Jacksonmg\LaravelMFA\Http\Middleware
  */
 class MFA
 {
