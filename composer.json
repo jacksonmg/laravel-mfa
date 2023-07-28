@@ -12,7 +12,7 @@
         "authentication",
         "security"
     ],
-    "homepage": "https://github.com/jacksonmg/laravel-mfa",
+    "homepage": "https://github.com/Jacksonmg/laravel-mfa",
     "license": "MIT",
     "authors": [
         {
@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "jacksonmg\\LaravelMFA\\": "src"
+            "Jacksonmg\\LaravelMFA\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "jacksonmg\\LaravelMFA\\Test\\": "tests"
+            "Jacksonmg\\LaravelMFA\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "jacksonmg\\LaravelMFA\\LaravelMFAServiceProvider"
+                "Jacksonmg\\LaravelMFA\\LaravelMFAServiceProvider"
             ]
         }
     }
