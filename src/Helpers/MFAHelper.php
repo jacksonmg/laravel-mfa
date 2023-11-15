@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Session;
 
 /**
- * Class MFAHelper
+ * Class MFAHelper.
  * @package Jacksonmg\LaravelMFA\Helpers
  */
 class MFAHelper
@@ -30,7 +30,7 @@ class MFAHelper
     }
 
     /**
-     * @param string $configGroup
+     * @param  string $configGroup
      * @return bool
      */
     public function isVerificationCompleted($configGroup): bool
@@ -52,7 +52,7 @@ class MFAHelper
 
     /**
      * @param string $configGroup
-     * @param int $userId
+     * @param int    $userId
      */
     public function clearVerificationCompleted($configGroup, $userId)
     {
@@ -60,8 +60,8 @@ class MFAHelper
     }
 
     /**
-     * @param  string  $codeCacheKey
-     * @param  int  $expiryMinutes
+     * @param  string $codeCacheKey
+     * @param  int    $expiryMinutes
      * @return int
      */
     public function refreshVerificationCode(string $codeCacheKey, int $expiryMinutes)
@@ -72,7 +72,7 @@ class MFAHelper
     }
 
     /**
-     * @param string $configGroup
+     * @param  string $configGroup
      * @return mixed
      */
     public function getUserModel($configGroup)
