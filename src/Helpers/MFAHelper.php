@@ -43,7 +43,11 @@ class MFAHelper
      */
     public function setVerificationCompleted($configGroup)
     {
-        Cache::put('mfa_completed_' . $configGroup . '_' . $this->getUserModel($configGroup)->id, true, now()->addHours($this->getConfigByGroup('mfa_expires_in_hours', $configGroup, 24)));
+        Cache::put(
+            'mfa_completed_' . $configGroup . '_' . $this->getUserModel($configGroup)->id,
+            true,
+            now()->addHours($this->getConfigByGroup('mfa_expires_in_hours', $configGroup, 24)) // Default is 24 hours
+        );
     }
 
     /**
